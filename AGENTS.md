@@ -75,3 +75,11 @@ Strong success criteria let you loop independently. Weak criteria ("make it work
 - If IDA cannot establish the behavior, fall back to the sanitized protocol evidence and references in `REFERENCES.md`, `protocol/`, and the applicable capture documentation. Do not invent opcodes, packet layouts, or request/response behavior.
 - Game folder (C:\Users\Khaled\Documents\GO-SRO\go-sro\VSRO_Client) if game crashed there will be a dumb inside the dumb folder
 - If game disconced then look into the Docker server logs first then move to the next appropiate step
+## Shared work tracking (fork: asciiLol)
+Claude and Codex both work on this fork. All tasks and bugs live in the private repo
+**https://github.com/asciiLol/sro-tracker** (GitHub Issues). Before starting any work, read
+`AGENTS.md` in that repo (`gh api repos/asciiLol/sro-tracker/contents/AGENTS.md --jq .content | base64 -d`)
+and follow its workflow: claim the issue with your `ajan:claude` / `ajan:codex` label, comment when you
+start and finish (with commit/PR link and how you tested), and reference `asciiLol/sro-tracker#<no>`
+in commit messages and branch names (`fix/<no>-<short-name>`). New bugs go there as issues, not as TODOs.
+Issues and comments are written in Turkish.
